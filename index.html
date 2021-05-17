@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body class="container-fluid">
+
+    <!-- Ô input nhập dữ liệu -->
+    <h1 class="d-flex justify-content-center">Class Marksheet</h1>
+    <input type="hidden" id="inputSTT" value="0" />
+    <div class="text-center">
+        Họ tên <input type="text" id="fullName" value="">
+    </div>
+    <div class="text-center p-2">
+        Điểm toán <input type="number" id="mathScore" value="">
+    </div>
+    <div class="text-center ">
+        Điểm lý <input type="number" id="physicalScore" value="">
+    </div>
+    <div class="text-center p-2">
+        Điểm hóa <input type="number" id="chemicalScore" value="">
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <button id="btn" name="button" type="button">Nhập</button>
+    </div>
+    <!-- Ô trả dữ liệu về -->
+    <br>
+    <table id="myTable" class="border border-dark container-fluid border-1">
+        <thead class="border border-dark text-center ">
+            <th class="border border-dark ">STT</th>
+            <th class="border border-dark ">Họ tên</th>
+            <th class="border border-dark ">Toán</th>
+            <th class="border border-dark ">Lý</th>
+            <th class="border border-dark ">Hóa</th>
+            <th id="tB">Trung bình</th>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+    <br>
+    <div class=" text-center p-4">
+        <button name="button" id="btnCalcAvg" type="button">Tính điểm trung bình</button>
+        <button name="button" id="btnStudent" type="button" onclick="hsGioi()">Xác định học sinh giỏi</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
